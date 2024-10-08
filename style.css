@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d4c3aa;
+}
+
+.galeria{
+    margin: 0;
+    display: flex;
+    height: 50vh;
+    gap: 0.1px;
+}
+
+.galeria div{
+   flex: 1; 
+   background-size: cover;
+   background-position: top center;
+   transition: all 0.5s cubic-bezier(0,.97,1,.01);
+}
+
+.galeria div:hover{
+ flex: 7;
+ /* filter: grayscale(100%) ; */
+ filter: saturate(90%);
+
+}
+
+.galeria:hover div:not(:hover){
+  filter: opacity(40%);
+
+}
+
+footer{
+    text-align: center;
+}
